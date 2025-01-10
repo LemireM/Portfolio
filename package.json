@@ -1,0 +1,19 @@
+{
+  "name": "mael-p8",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "build:gh": "vite build --base=/mael-P8/",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^6.0.5"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.3",
+    "emailjs-com": "^3.2.0"
+  }
+}
