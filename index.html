@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script type="module" src="/src/main.js"></script>
+    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <title>Mon Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <h1>Bienvenue sur mon Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#about">À propos</a></li>
+          <li><a href="#projects">Projets</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="about">
+        <h2 class="section-title">À propos de moi</h2>
+
+      </section>
+      <section id="contact">
+        <form id="contact-form" action="/contact" method="post">
+          <h2>Contactez-moi</h2>
+          <div>
+            <label for="email">Email :</label>
+            <input type="email" id="email" name="email" required>
+          </div>
+          <div>
+            <label for="message">Message :</label>
+            <textarea id="message" name="message" rows="4" required></textarea>
+          </div>
+          <div>
+            <button type="submit">Envoyer</button>
+          </div>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>&copy; 2025 - Mon Portfolio</p>
+      <ul>
+        <li>
+          <a href="https://github.com/LemireM">
+          <img src="github.svg" alt="Github">
+          </a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/mael-lemire-058aa62a4/">
+          <img src="linkedin.svg" alt="Linkedin">
+        </li>
+      </ul>
+    </footer>
+  </body>
+</html>
