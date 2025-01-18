@@ -4,16 +4,15 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script type="module" src="/src/main.js"></script>
-    <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
     <title>Mon Portfolio</title>
   </head>
   <body>
     <header>
-      <h1>Bienvenue sur mon Portfolio</h1>
+      <h1>Bienvenue sur mon Portfolio!</h1>
       <nav>
         <ul>
           <li><a href="#about">À propos</a></li>
-          <li><a href="#projects">Projets</a></li>
+          <li><a href="#projects">Mes projets</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
       </nav>
@@ -21,36 +20,123 @@
     <main>
       <section id="about">
         <h2 class="section-title">À propos de moi</h2>
-
+          <div class="about-content">
+            <p class="description">Hello! Moi c'est Mael, je suis un développeur web junior actuellement en recherche d'un stage ou d'une alternance. Avec un fort intérêt pour l'expérience utilisateur, j'aime concevoir des sites modernes et sécurisé et je suis aussi bien animé par le front-end que par le back-end.</p>
+            <a id="cv-btn" href="/cv.pdf" target="_blank">Voir mon CV</a>
+          </div>
+        <h2 id="title-cards">Voici un aperçu des outils que j'ai utilisé sur mes derniers projets:</h2>
+          <div class="cards-container">
+            <div class="card">
+              <div class="card-content">
+                <h2 class="cards-titles">Coté Back-end</h2>
+                <ul>
+                  <li>
+                    <img src="./assets/img/ruby.svg" alt="ruby">
+                    <p>MVC et CRUD avec Rails ainsi que la création et la gestion debases de données relationelles</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/javascript.svg" alt="js">
+                    <p>Programmation orientée objet avec JavaScript et création de routes sécurisées</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/node-js.svg" alt="nodejs">
+                    <p>API RESTful avec Node.js et routing sécurisé avec Express</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/mongodb.svg" alt="mongodb">
+                    <p>Base de données rapides NoSQL avec MongoDB</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="card">
+              <div class="card-content">
+                <h2 class="cards-titles">Coté Front-end</h2>
+                <ul>
+                  <li>
+                    <img src="./assets/img/javascript.svg" alt="js">
+                    <p>Solutions serverless comme l'emailing et l'authentification avec JWT</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/react.svg" alt="react">
+                    <p>Création de composants et routing moderne et sécurisé en SPA</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/css3.svg" alt="css">
+                    <p>Animations et design responsive</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/html5.svg" alt="html">
+                    <p>Sémantique et accessibilité (SEO)</p>
+                  </li>
+                  <li>
+                    <img src="./assets/img/figma.svg" alt="figma">
+                    <p>Réalisation de wireframes et maquettes/ UI kits</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
       </section>
+      <section id="projects">
+        <h2 class="section-title">Mes projets</h2>
+        <p>Voici mes derniers projets reflétant mes compétences acquises lors de ma formation:</p>
+        <div class="carousel-container">
+          <div class="carousel">
+            <div class="carousel-track">
+              <div class="carousel-slide">
+                <h3>Kasa</h3>
+                <div class="image-container">
+                <img src="./assets/img/Kasa.png" alt="Projet 1">
+              </div>
+                <a href="https://github.com/LemireM/Kasa" target="_blank">Vers le code source</a>
+              </div>
+              <div class="carousel-slide">
+                <h3>Mon vieux grimoire</h3>
+              <div class="image-container">
+                <img src="./assets/img/vieux_grimoire.png" alt="Projet 2">
+              </div>
+                <a href="https://github.com/LemireM/mon-vieux-grimoire" target="_blank">Vers le code source</a>
+              </div>
+            </div>
+            <div class="carousel-buttons">
+              <button id="prev">&#10094;</button>
+              <button id="next">&#10095;</button>
+            </div>
+          </div>
+        </div>
+        </section>
       <section id="contact">
-        <form id="contact-form" action="/contact" method="post">
-          <h2>Contactez-moi</h2>
-          <div>
-            <label for="email">Email :</label>
-            <input type="email" id="email" name="email" required>
-          </div>
-          <div>
-            <label for="message">Message :</label>
-            <textarea id="message" name="message" rows="4" required></textarea>
-          </div>
-          <div>
-            <button type="submit">Envoyer</button>
-          </div>
-        </form>
+        <div class="contact-container">
+          <form id="contact-form" action="/contact" method="post">
+            <h2>Me contacter</h2>
+              <p id="contact">Pour toutes demandes ou questions concernant vos projets, n'hésitez pas à me joindre!</p>
+            <div>
+              <label for="email"></label>
+              <input type="email" id="email" name="email" placeholder="exemple@xyz.com" required>
+            </div>
+            <div>
+              <label for="message"></label>
+              <textarea id="message" name="message" placeholder="Veuillez saisir votre message..." rows="4" required></textarea>
+            </div>
+            <div>
+              <button type="submit">Envoyer</button>
+            </div>
+          </form>
+        </div>
       </section>
     </main>
     <footer>
-      <p>&copy; 2025 - Mon Portfolio</p>
+      <p>&copy; 2025 - Mon Portfolio - Mael L.</p>
       <ul>
         <li>
           <a href="https://github.com/LemireM">
-          <img src="github.svg" alt="Github">
+          <img src="./assets/img/github.svg" alt="Github">
           </a>
         </li>
         <li>
           <a href="https://www.linkedin.com/in/mael-lemire-058aa62a4/">
-          <img src="linkedin.svg" alt="Linkedin">
+          <img src="./assets/img/linkedin.svg" alt="Linkedin">
         </li>
       </ul>
     </footer>
