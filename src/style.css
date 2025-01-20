@@ -166,12 +166,11 @@ form button:hover {
   color: #fff;
   cursor: pointer;
   text-decoration: none;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 1px 1px 4px grey;
 }
 
 #cv-btn:hover {
   background-color: #5A2D82;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .about-content {
@@ -199,7 +198,7 @@ form button:hover {
   flex-direction: row;
   background-color: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 4px grey;
   max-width: 600px;
   width: 100%;
   overflow: hidden;
@@ -328,6 +327,7 @@ form button:hover {
   border-radius: 5px;
   transition: background-color 0.3s ease;
   text-align: center;
+  box-shadow: 2px 2px 2px grey;
 }
 
 .carousel-slide a:hover {
@@ -364,7 +364,7 @@ form button:hover {
   padding: 20px;
   border-radius: 10px;
   margin-top: 20px;
-  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  box-shadow: 2px 2px 2px grey;
 }
 
 .desc-container p {
